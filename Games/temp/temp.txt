@@ -1,0 +1,12 @@
+Создана директория: Games/src
+Создана директория: Games/res
+Создана директория: Games/savegames
+Создана директория: Games/temp
+Создана директория: Games/src/main
+Создана директория: Games/src/test
+Создана директория: Games/res/drawables
+Создана директория: Games/res/vectors
+Создана директория: Games/res/icons
+Создан файл: Games/src/main/Main.java
+Создан файл: Games/src/main/Utils.java
+Создан файл: Games/temp/temp.txt
