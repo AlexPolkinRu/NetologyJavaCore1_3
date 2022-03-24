@@ -8,21 +8,19 @@ import java.util.List;
 
 public class Main {
 
-    static StringBuilder bufferLog = new StringBuilder();
+    private static StringBuilder bufferLog = new StringBuilder();
 
     public static void main(String[] args) {
 
-//        В папке Games создайте несколько директорий: src, res, savegames, temp.
-//        В каталоге src создайте две директории: main, test.
-//        В подкаталоге main создайте два файла: Main.java, Utils.java.
-//        В каталоге res создайте три директории: drawables, vectors, icons.
-//        В директории temp создайте файл temp.txt.
+        // В папке Games создайте несколько директорий: src, res, savegames, temp.
+        // В каталоге src создайте две директории: main, test.
+        // В подкаталоге main создайте два файла: Main.java, Utils.java.
+        // В каталоге res создайте три директории: drawables, vectors, icons.
+        // В директории temp создайте файл temp.txt.
 
         final String LOG_FILENAME = "Games/temp/temp.txt";
 
         final List<String> MAKE_DIR_LIST = new ArrayList<>(Arrays.asList(
-                "Games/src",
-                "Games/res",
                 "Games/savegames",
                 "Games/temp",
                 "Games/src/main",
@@ -62,17 +60,16 @@ public class Main {
         saveLogToFile(LOG_FILENAME);
     }
 
-    static void log(String message) {
+    public static void log(String message) {
         System.out.println(message);
         bufferLog.append(message).append("\n");
     }
 
-    static void saveLogToFile(String logFile) {
+    public static void saveLogToFile(String logFile) {
         try (FileWriter fw = new FileWriter(logFile, true)) {
             fw.write(bufferLog.toString());
         } catch (Exception e) {
             System.out.println("Ошибка обращения к файлу: " + e.getMessage());
         }
     }
-
 }
